@@ -14,9 +14,9 @@ if [ -z "$1" ] && [ -z "$2" ]; then
 fi
 
 if [ $1 = "-v" ]; then
-      "C:\Program Files (x86)\Java\jdk1.8.0_281\bin\java" -DfilePath=$2 -DprintKeys -jar $dir/$jar_name
+      java -DfilePath=$2 -DprintKeys -jar $dir/$jar_name
 else
-      "C:\Program Files (x86)\Java\jdk1.8.0_281\bin\java" -DfilePath=$1 -jar $dir/$jar_name
+      java -DfilePath=$1 -jar $dir/$jar_name
 fi
 
 # To see application output - can be removed
